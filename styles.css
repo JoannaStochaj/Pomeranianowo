@@ -1,0 +1,695 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 75px;
+  border-bottom: 0.5px solid black;
+  font-family: "Lato", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #bf5827;
+}
+
+nav li {
+  padding-right: 40px;
+}
+
+nav img {
+  height: 70px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.main-img {
+  height: 600px;
+  background-image: url("/zwierze-sliczny-szpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: top;
+  display: flex;
+  color: rgb(240, 239, 239);
+}
+
+.main-text {
+  font-family: "Caveat Brush", cursive;
+  text-align: left;
+}
+
+.main-text h1 {
+  margin: 70px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.main-text h2 {
+  font-size: 16px;
+  text-align: left;
+  width: 22%;
+  margin-left: 70px;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.history {
+  height: 500px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 40px;
+}
+
+.history-info {
+  height: 500px;
+  font-family: "Lato", sans-serif;
+  margin: 30px;
+}
+
+.history-info h3 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 44px;
+  font-weight: 600;
+  color: black;
+  border-bottom: 1px solid #bf5827;
+  margin: 10px;
+  padding: 20px;
+}
+
+.history p {
+  text-align: left;
+  font-size: 16px;
+  color: #233d4d;
+  margin: 20px;
+}
+
+.history-picture img {
+  max-height: 500px;
+}
+
+.character {
+  height: 700px;
+  width: auto;
+  display: flex;
+  background-image: url("/pomorski-pies-z-zoltym-futrem-patrzac-przez-okno.jpg");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-position-y: top;
+}
+.character-info {
+  height: 700px;
+  font-family: "Lato", sans-serif;
+  text-align: right;
+}
+
+.character-info h3 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 44px;
+  color: white;
+  margin-top: 70px;
+  margin-right: 110px;
+}
+
+.character-info p {
+  text-align: right;
+  font-size: 18px;
+  margin-left: 70px;
+  font-weight: 100;
+  margin-right: 110px;
+  margin-left: auto;
+  width: 50%;
+}
+
+.character-info {
+  position: relative;
+  display: block;
+  justify-content: end;
+}
+
+.character-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.character-info h3,
+.character-info p {
+  position: relative;
+  border-bottom: none;
+  z-index: 1;
+  color: white;
+}
+
+h3 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 44px;
+  font-weight: 600;
+  color: black;
+  border-bottom: 1px solid #bf5827;
+  padding: 10px;
+}
+
+.care {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.care .top-figures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.care .bottom-figures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+figure {
+  flex: 0 1 calc(33.33% - 20px);
+  margin: 10px;
+}
+
+h4 {
+  color: #bf5827;
+  font-family: "Caveat Brush", cursive;
+  font-weight: 200;
+  font-size: 26px;
+  text-align: center;
+}
+
+.care p {
+  color: #233d4d;
+  text-align: center;
+  font-size: 16px;
+  padding: 0 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.care .read-more-less-btn {
+  background-color: #bf5827;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 200px;
+  margin: 0px 0;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.care .care-img {
+  height: 120px;
+  width: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  display: block;
+  margin: auto;
+}
+
+.care .brushing {
+  background-image: url(/pet-brush.png);
+  background-position: center;
+}
+
+.care .bathing {
+  background-image: url(/bathing.png);
+  background-position: center;
+}
+
+.care .eyes-and-ears {
+  background-image: url(/ear-cleaning.png);
+  background-position: center;
+}
+
+.care .claw-trimming {
+  background-image: url(/paw.png);
+  background-position: center;
+}
+
+.care .teeth {
+  background-image: url(/teeth.png);
+  background-position: center;
+}
+
+.care .diet-and-water {
+  background-image: url(/dog-food.png);
+  background-position: center;
+}
+
+.additional-paragraph {
+  display: none;
+}
+
+.health {
+  height: 700px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.health-info {
+  height: 600px;
+  font-family: "Lato", sans-serif;
+  margin: 30px;
+}
+
+.health-info h3 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 44px;
+  font-weight: 600;
+  color: black;
+  border-bottom: 1px solid #bf5827;
+  margin: 10px;
+  padding: 20px;
+}
+
+.health p {
+  text-align: left;
+  font-size: 16px;
+  color: #233d4d;
+  margin: 20px;
+}
+
+.health-picture img {
+  max-height: 500px;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+}
+
+.image-container {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  padding: 25px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.other {
+  text-align: left;
+  margin-top: 20px;
+  background-color: #bf5827;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dog-toys,
+.leashes {
+  flex: 1;
+  padding: 10px;
+  margin: 50px;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.dog-toys h4,
+.leashes h4 {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  padding: 0;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.category {
+  padding: 0;
+}
+.other ul li {
+  list-style: none;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.other h3 {
+  text-align: left;
+  margin: 30px;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery h3 {
+  width: 800px;
+  display: block;
+  width: 80%;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 400px;
+  max-width: 90%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.previous-arrow,
+.next-arrow {
+  color: #bf5827;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.previous-arrow:hover,
+.next-arrow:hover {
+  color: #233d4d;
+  flex: 0 0 auto;
+}
+
+.slider-container i {
+  font-size: 25px;
+}
+
+.slider li img {
+  width: 500px;
+  border-radius: 5px;
+}
+
+.slider-stage {
+  width: 500px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.slider {
+  list-style: none;
+  width: 500px;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.slider-container h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-up {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.go-up button {
+  font-size: 25px;
+  background-color: #bf5827;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  border: none;
+  font-family: "Caveat Brush", cursive;
+  text-wrap: wrap;
+}
+
+.go-up button:hover {
+  color: white;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #bf5827;
+}
+.contact-details ul {
+  list-style: none;
+  margin: 30px;
+  padding: 0;
+}
+
+.mail-and-web {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  font-family: "Caveat Brush", cursive;
+  color: #bf5827;
+}
+
+.mail-and-web li {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.contact-details p {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.mail-and-web li a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: black;
+  font-size: 22px;
+  font-family: "Caveat Brush", cursive;
+}
+
+footer {
+  background-color: #bf5827;
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+footer p {
+  padding: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    padding: 10px 0;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+  }
+
+  .main-text h2 {
+    text-align: left;
+    width: 70%;
+    height: auto;
+  }
+
+  .history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .history-info {
+    order: 1;
+    margin-bottom: 550px;
+    margin-top: 0;
+  }
+
+  .history-picture {
+    order: 1;
+    margin-top: 300px;
+  }
+
+  .history p {
+    text-align: center;
+  }
+
+  .character {
+    height: auto;
+  }
+  .character-info {
+    height: auto;
+  }
+
+  .character-info p {
+    text-align: center;
+  }
+
+  .care .top-figures,
+  .care .bottom-figures {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .care .top-figures figure,
+  .care .bottom-figures figure {
+    margin-bottom: 20px;
+  }
+
+  .health {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .helath-info {
+    order: 1;
+    margin-bottom: 40px;
+  }
+
+  .health-picture {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .health-picture img {
+    margin-top: 450px;
+  }
+
+  .health-info {
+    margin-bottom: 280px;
+  }
+
+  .health p {
+    text-align: center;
+  }
+
+  .care,
+  .read-more-less-btn {
+    align-items: center;
+    margin: 0;
+  }
+
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .other {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+  }
+
+  .other h3 {
+    text-align: center;
+  }
+
+  .dog-toys,
+  .leashes {
+    margin-top: 5px;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .slider li {
+    width: 100%;
+  }
+
+  .slider li img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .mail-and-web li {
+    justify-content: center;
+    margin: 0;
+  }
+}
